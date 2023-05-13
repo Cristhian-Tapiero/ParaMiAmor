@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+input[type=text]{
+    border: none;
+    appearance: none;
+    outline: none;
+    background: none;
+    cursor: text;
+}
+a{
+    cursor: pointer;
+}
+.main-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.welcome, .form, .first, .second, .third{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.welcome, .form, .first, .second, .third{
+    background: url(wave.svg) no-repeat bottom, url(waveupdown.svg) no-repeat top, #c986ed;   
+}
+.text{
+    margin-top: 2rem;
+    width: 70%;
+    text-align: center;
+}
+.title{
+    max-width: 80%;
+    text-align: center;
+}
+.move-button-bottom, .move-button-top{
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    width: 7%;
+    height: 7%;
+    background-color: #B8B0D9;
+    border-radius: 20px;
+    transition: 2s;
+}
+.move-button-top{
+    right: calc(1rem + 7% + 5px);
+}
+.move-button-bottom:hover, .move-button-top:hover{
+    background-color: #7965BF;
+    color: whitesmoke;
+}
+
+.move-button-bottom:disabled, .move-button-top:disabled{
+    cursor: not-allowed;
+    background-color: #B8B0D9;
+    color: gray;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.input[type=text]{
+    width: 60%;
+    height: 5vh;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #7965BF;
+    transition: 1s;
+}
+.input[type=text]:focus{
+    background-color: #c9a8dc;
+}
+.terms{
+    margin-bottom: 2rem;
+}
+.button{
+    width: 20%;
+    background-color: #B8B0D9;
+    height: 5vh;
+    border-radius: 15px;
+    transition: 2s;
+}
+.button:hover{
+    background-color: #7965BF;
+    color: white;
+}
+.button:disabled{
+    background-color: #B8B0D9;
+    cursor: not-allowed;
+    color: gray;
+}

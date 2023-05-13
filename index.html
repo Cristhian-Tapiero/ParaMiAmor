@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi gorda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <section class="welcome" id="welcome">
+            <h1 class="title">Hola mi vida hermosa</h1>
+            <p class="text">Tal vez esto no es lo que esperabas, pero es parte de lo que se hacer y es con todo el amor del mundo ❤️</p>
+            <a href="#form-container"><button class="move-button-bottom"><span class="material-symbols-outlined">arrow_downward</span></button></a>
+            <a href=""><button class="move-button-top" disabled><span class="material-symbols-outlined">arrow_upward</span></button></a>
+        </section>
+        <section class="form" id="form-container">
+            <h1 class="title">Primero introduce tu nombre: </h1>
+            <form action="" class="form-container" id="main-form">
+                <input type="text" name="nombre" id="name-input" class="input" placeholder="Ingresa tu nombre aqui">
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms-input">
+                    <label for="terms">Aceptas renovar contrato de amor de por vida?</label>
+                </div>
+                <button class="button" id="button" disabled>Aceptar</button>                
+            </form>
+            <a href="#first" id="button-click"><button class="move-button-bottom"  id="button-change" disabled><span class="material-symbols-outlined">arrow_downward</span></button></a>
+            <a href="#welcome"><button class="move-button-top"><span class="material-symbols-outlined">arrow_upward</span></button></a>
+        </section>
+        <section class="first" id="first">
+            <h1 class="title" id="saludo"></h1>
+            <p class="text">He de confesarte que no soy muy bueno expresando lo que siento, ni lo que pienso. He de confesar que no soy cursi, no me gusta dar a torcer mi brazo, ni me gusta que vean lo sensible que puedo ser por amor. Porque me gusta que te sientas segura, porque me gustaría que nunca estes sola, ni te sientas sola, que siempre te sientas protegida por tu hombre...</p>
+            <a href="#second"><button class="move-button-bottom"><span class="material-symbols-outlined">arrow_downward</span></button></a>
+            <a href="#form-container"><button class="move-button-top"><span class="material-symbols-outlined">arrow_upward</span></button></a>
+
+        </section>
+        <section class="second" id="second">
+            <h1 class="title">Pero siempre hay tiempo para corregir las cosas ¿No?</h1>
+            <p class="text">Soy un ser humano, un ser tan pequeño en este mundo, somos propensos a cometer errores, pero algo que nunca sera un error es esto que sentimos mutuamente, porque te amo, porque eres mi media naranja :)</p>
+            <a href="#third"><button class="move-button-bottom"><span class="material-symbols-outlined">arrow_downward</span></button></a>
+            <a href="#first"><button class="move-button-top"><span class="material-symbols-outlined">arrow_upward</span></button></a>
+        </section>
+        <section class="third" id="third">
+            <h1 class="title">No hay palabras para expresar lo que siento</h1>
+            <p class="text">Pero estoy seguro de lo que siento, estoy seguro que eres el amor de mi vida, y si no lo eres diré que me habré equivocado de vida, pero no de amor. <br /> <a id="link">Te amo mucho mi vida!!! 💕</a> </p>
+            <a href=""><button class="move-button-bottom" disabled><span class="material-symbols-outlined">arrow_downward</span></button></a>
+            <a href="#second"><button class="move-button-top"><span class="material-symbols-outlined">arrow_upward</span></button></a>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
